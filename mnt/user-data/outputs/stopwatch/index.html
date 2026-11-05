@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Online Stopwatch with Lap Times – Free | ClockVibe</title>
+<meta name="description" content="Free online stopwatch with lap times, accurate to 0.01 second. Start, stop, lap and reset with one click or keyboard. No ads, no sign-up.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://digialclockvibe.online/stopwatch/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#140d2a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ClockVibe">
+<meta property="og:url" content="https://digialclockvibe.online/stopwatch/">
+<meta property="og:title" content="Online Stopwatch with Lap Times – Free | ClockVibe">
+<meta property="og:description" content="Free online stopwatch with lap times, accurate to 0.01 second. Start, stop, lap and reset with one click or keyboard. No ads, no sign-up.">
+<meta property="og:image" content="https://digialclockvibe.online/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Online Stopwatch with Lap Times – Free | ClockVibe">
+<meta name="twitter:description" content="Free online stopwatch with lap times, accurate to 0.01 second. Start, stop, lap and reset with one click or keyboard. No ads, no sign-up.">
+<meta name="twitter:image" content="https://digialclockvibe.online/og-image.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Online Stopwatch", "url": "https://digialclockvibe.online/stopwatch/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web browser)", "description": "Free online stopwatch with lap times, accurate to 0.01 second. Start, stop, lap and reset with one click or keyboard. No ads, no sign-up.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ClockVibe", "item": "https://digialclockvibe.online/"}, {"@type": "ListItem", "position": 2, "name": "Online Stopwatch", "item": "https://digialclockvibe.online/stopwatch/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I use the online stopwatch?", "acceptedAnswer": {"@type": "Answer", "text": "Press Start to begin timing, Lap to save a split time, Stop to pause and Reset to clear everything. You can also use the Space, L and R keys."}}, {"@type": "Question", "name": "How accurate is the stopwatch?", "acceptedAnswer": {"@type": "Answer", "text": "It shows hundredths of a second and uses your device clock, so it stays accurate even if the page is busy."}}, {"@type": "Question", "name": "Can I record lap times?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Press Lap while the stopwatch is running. Each lap shows its own time and the total time, and the newest lap appears first."}}, {"@type": "Question", "name": "What is the difference between a stopwatch and a timer?", "acceptedAnswer": {"@type": "Answer", "text": "A stopwatch counts up to measure elapsed time. A timer counts down and alerts you when it reaches zero."}}, {"@type": "Question", "name": "Is the stopwatch free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is free, has no ads and does not need a sign-up."}}]}]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--fg:#fff;box-sizing:border-box}
+*{box-sizing:inherit;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px;scroll-snap-type:y proximity}
+body{background:#0b0b14;color:var(--fg);font-family:Sora,system-ui,sans-serif;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
+header{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 20px;background:rgba(10,10,20,.55);backdrop-filter:blur(16px);transition:opacity .5s}
+.hide header{opacity:0}
+.logo{font-weight:600;font-size:1.1rem}.logo i{font-style:normal;color:#ff8fb8}
+nav,.tools{display:flex;gap:6px;flex-wrap:wrap}
+a.n,button.chip{color:inherit;text-decoration:none;font:inherit;font-size:.82rem;background:rgba(255,255,255,.09);border:1px solid transparent;border-radius:999px;padding:7px 14px;cursor:pointer}
+a.n:hover,button.chip:hover{background:rgba(255,255,255,.16)}
+button.chip[aria-pressed=true]{border-color:#fff}
+:focus-visible{outline:2px solid #fff;outline-offset:3px}
+section{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 20px 60px;overflow:hidden;background:var(--bg);scroll-snap-align:start;scroll-margin-top:0}
+section::before,section::after{content:"";position:absolute;width:55vmax;height:55vmax;border-radius:50%;filter:blur(100px);opacity:.45;animation:drift 24s ease-in-out infinite alternate}
+section::before{background:var(--b1);top:-25vmax;left:-15vmax}
+section::after{background:var(--b2);bottom:-28vmax;right:-18vmax;animation-delay:-12s}
+@keyframes drift{to{transform:translate(10vmax,6vmax) scale(1.15)}}
+section>*{position:relative;z-index:1}
+#clock{--bg:#140d2a;--ac:#ff8fb8;--b1:#6c3df0;--b2:#ff5fa2}
+#world{--bg:#04202a;--ac:#5eead4;--b1:#0ea5a4;--b2:#2563eb}
+#timer{--bg:#1d0f0b;--ac:#ffb054;--b1:#e8590c;--b2:#c2255c}
+#stopwatch{--bg:#08190f;--ac:#4ade80;--b1:#16a34a;--b2:#0ea5e9}
+h2{font-weight:700;font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.01em;color:var(--ac);margin-bottom:30px;text-shadow:0 0 30px color-mix(in srgb,var(--ac) 45%,transparent)}
+.big{font-weight:700;font-size:clamp(4.2rem,20vw,16rem);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;background:linear-gradient(180deg,#fff 20%,var(--ac));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 40px color-mix(in srgb,var(--ac) 45%,transparent))}
+.big small{font-size:.3em;font-weight:600;letter-spacing:0;margin-left:.12em}
+.date{margin-top:1.4rem;font-size:clamp(1rem,2.4vw,1.6rem);font-weight:300}
+.zone{margin-top:.4rem;font-size:.85rem;opacity:.55}
+.bar{width:min(520px,80vw);height:4px;border-radius:4px;background:rgba(255,255,255,.12);margin-top:2rem;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ac);width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;width:min(1000px,100%)}
+.card{text-align:left;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:22px;backdrop-filter:blur(14px)}
+.card b{font-weight:400;opacity:.75;display:flex;justify-content:space-between}
+.card span{display:block;font-size:2.6rem;font-weight:200;margin:8px 0 2px;font-variant-numeric:tabular-nums}
+.card em{font-style:normal;font-size:.78rem;opacity:.55}
+.card .bar{width:100%;margin-top:14px;height:3px}
+.ring{position:relative;width:min(80vw,400px);aspect-ratio:1;margin-bottom:30px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.1),transparent 70%)}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg);filter:drop-shadow(0 0 18px color-mix(in srgb,var(--ac) 50%,transparent))}
+.ring circle{fill:none;stroke-width:11;stroke-linecap:round}
+.ring .k{stroke:rgba(255,255,255,.28);stroke-width:4;stroke-linecap:butt;stroke-dasharray:1.5 6.67}
+.ring .t{stroke:rgba(255,255,255,.12)}.ring .p{stroke:url(#tg)}
+.ring div{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(3rem,12vw,5rem);font-weight:700;letter-spacing:-.02em;color:#fff;text-shadow:0 0 30px color-mix(in srgb,var(--ac) 60%,transparent);font-variant-numeric:tabular-nums}
+.sw{font-size:clamp(3rem,13vw,8rem);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;background:linear-gradient(180deg,#fff,var(--ac));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 30px color-mix(in srgb,var(--ac) 55%,transparent));padding:10px 36px;margin-bottom:24px}
+.row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.go{background:linear-gradient(135deg,var(--ac),var(--b2));color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.35);border:0;border-radius:999px;padding:15px 48px;font:inherit;font-size:1.05rem;font-weight:700;cursor:pointer;box-shadow:0 10px 30px color-mix(in srgb,var(--b2) 55%,transparent);transition:transform .2s}
+.go:hover{transform:translateY(-2px) scale(1.03)}
+.row .chip{font-weight:600;padding:10px 20px}
+@media(prefers-reduced-motion:no-preference){.ring.on svg{animation:pulse 2s ease-in-out infinite}}
+@keyframes pulse{50%{transform:rotate(-90deg) scale(1.03)}}
+.row input{width:100px;background:rgba(255,255,255,.09);border:0;border-radius:999px;padding:8px 14px;color:inherit;font:inherit;text-align:center}
+ol{list-style:none;padding:0;margin-top:20px;max-height:170px;overflow:auto;width:min(340px,100%);font-variant-numeric:tabular-nums;font-weight:300}
+li{display:flex;justify-content:space-between;padding:8px 4px;border-bottom:1px solid rgba(255,255,255,.1)}
+.h1{font-size:clamp(1rem,2.4vw,1.4rem);font-weight:600;color:var(--ac);margin-bottom:1rem}
+.lead{max-width:640px;margin:-14px auto 28px;font-size:.95rem;line-height:1.7;font-weight:300;opacity:.8}
+#faq{--bg:#0e1126;--ac:#a5b4fc;--b1:#4f46e5;--b2:#0ea5e9;min-height:auto;padding-bottom:90px}
+.faqs{width:min(760px,100%);text-align:left}
+details{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px 22px;margin-bottom:12px;backdrop-filter:blur(14px)}
+summary{cursor:pointer;font-weight:600;font-size:1.05rem}
+details p{margin-top:12px;line-height:1.7;opacity:.8;font-weight:300}
+footer{padding:30px;text-align:center;font-size:.8rem;opacity:.5;background:#0b0b14}
+@media(max-width:600px){nav{display:none}}
+@media(prefers-reduced-motion:reduce){section::before,section::after{animation:none}html{scroll-behavior:auto}}
+
+body.pg section.tool{min-height:92vh}
+.pg #tool{--bg:var(--tbg)}
+.txt{background:#0b0b14;padding:70px 20px 40px}
+.txt article{max-width:760px;margin:0 auto;text-align:left;line-height:1.8;font-weight:300}
+.txt h2{font-size:clamp(1.4rem,3vw,2rem);margin:36px 0 12px;text-shadow:none;color:var(--tac)}
+.txt p{opacity:.85;margin-bottom:14px}
+.txt ul{margin:0 0 14px 22px;opacity:.85}
+.txt li{display:list-item;border:0;padding:3px 0}
+.txt a,footer a{color:#ff8fb8}
+.txt .faqs{margin-top:10px}
+.crumb{font-size:.8rem;opacity:.6;margin-bottom:14px}
+.crumb a{color:inherit}
+header .logo a{color:inherit;text-decoration:none}
+a.n[aria-current=page]{border-color:#fff}
+footer nav{display:flex;justify-content:center;gap:16px;margin-bottom:10px}
+footer nav a{font-size:.85rem}
+</style>
+</head>
+<body class="pg" style="--tac:#4ade80">
+<header><div class="logo"><a href="/">Clock<i>Vibe</i></a></div><nav style="display:flex"><a class="n" href="/">Clock</a><a class="n" href="/world-clock/">World Clock</a><a class="n" href="/timer/">Timer</a><a class="n" href="/stopwatch/" aria-current="page">Stopwatch</a></nav></header>
+<section id="tool" class="tool" style="--tbg:#08190f;--ac:#4ade80;--b1:#16a34a;--b2:#0ea5e9">
+ <div class="crumb"><a href="/">ClockVibe</a> › Online Stopwatch</div>
+ <h1 class="h1" style="font-size:clamp(1.5rem,4vw,2.6rem);margin-bottom:18px">Online Stopwatch with Lap Times</h1>
+ <p class="lead" style="margin-top:0">Start, stop and record laps to one hundredth of a second. Free and no sign-up.</p>
+ <div class="sw" id="swt">00:00.00</div>
+ <div class="row"><button class="go" id="swgo">Start</button><button class="chip" id="swlap">Lap</button><button class="chip" id="swrs">Reset</button></div>
+ <ol id="laps"></ol>
+</section>
+<section class="txt"><article>
+<h2>A free online stopwatch with lap times</h2>
+<p>This online stopwatch measures time to one hundredth of a second. Press Start to begin, Stop to pause and Start again to continue. While it is running, press Lap to save a split time. Each lap shows the time of that lap and the total time so far, with the newest lap at the top. It works in any browser and needs no download.</p>
+<h2>Keyboard shortcuts</h2>
+<ul><li><b>Space:</b> start or stop</li><li><b>L:</b> record a lap</li><li><b>R:</b> reset</li></ul>
+<h2>What a stopwatch is useful for</h2>
+<ul><li><b>Running and cycling:</b> record split times for each lap or kilometre.</li><li><b>Swimming and gym training:</b> time sets, rest and intervals.</li><li><b>Cooking and experiments:</b> measure how long a step really takes.</li><li><b>Speeches and presentations:</b> practise and check how long each part lasts.</li><li><b>Games and quizzes:</b> time players fairly, with lap times for each round.</li></ul>
+<h2>Stopwatch or timer?</h2>
+<p>A stopwatch counts up from zero and shows how much time has passed. A timer counts down from a time you choose and alerts you at zero. If you want to be told when time is up, use the <a href="/timer/">online timer</a>. If you want to measure how long something takes, use this stopwatch.</p>
+<h2>Frequently asked questions</h2>
+<div class="faqs"><details><summary>How do I use the online stopwatch?</summary><p>Press Start to begin timing, Lap to save a split time, Stop to pause and Reset to clear everything. You can also use the Space, L and R keys.</p></details><details><summary>How accurate is the stopwatch?</summary><p>It shows hundredths of a second and uses your device clock, so it stays accurate even if the page is busy.</p></details><details><summary>Can I record lap times?</summary><p>Yes. Press Lap while the stopwatch is running. Each lap shows its own time and the total time, and the newest lap appears first.</p></details><details><summary>What is the difference between a stopwatch and a timer?</summary><p>A stopwatch counts up to measure elapsed time. A timer counts down and alerts you when it reaches zero.</p></details><details><summary>Is the stopwatch free?</summary><p>Yes. It is free, has no ads and does not need a sign-up.</p></details></div>
+<h2>More free tools</h2>
+<p><a href="/">Digital clock with seconds</a> · <a href="/timer/">Online countdown timer</a> · <a href="/world-clock/">World clock</a></p>
+</article></section>
+<footer><nav><a href="/">Clock</a><a href="/world-clock/">World Clock</a><a href="/timer/">Timer</a><a href="/stopwatch/">Stopwatch</a></nav>ClockVibe · Free online clock, world clock, timer and stopwatch · No ads, no login</footer>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],pad=n=>String(n).padStart(2,'0');
+let W={t:0,run:false,s:0},lastLap=0;
+const el=()=>W.t+(W.run?Date.now()-W.s:0);
+const fmt=e=>pad(Math.floor(e/60000))+':'+pad(Math.floor(e/1000)%60)+'.'+pad(Math.floor(e/10)%100);
+const go=()=>{if(W.run)W.t+=Date.now()-W.s;else W.s=Date.now();W.run=!W.run;$('#swgo').textContent=W.run?'Stop':'Start'};
+const lap=()=>{const e=el();if(!e)return;const li=document.createElement('li');li.innerHTML=`<span>Lap ${$('#laps').children.length+1}</span><span>${fmt(e-lastLap)}</span><span>${fmt(e)}</span>`;lastLap=e;$('#laps').prepend(li)};
+const rs=()=>{W={t:0,run:false,s:0};lastLap=0;$('#laps').innerHTML='';$('#swgo').textContent='Start'};
+$('#swgo').onclick=go;$('#swlap').onclick=lap;$('#swrs').onclick=rs;
+addEventListener('keydown',e=>{if(e.code==='Space'){e.preventDefault();go()}else if(e.key==='l'||e.key==='L')lap();else if(e.key==='r'||e.key==='R')rs()});
+function tick(){const t=fmt(el());$('#swt').textContent=t;document.title=W.run?t+' – Online Stopwatch | ClockVibe':'Online Stopwatch with Lap Times – Free | ClockVibe'}
+tick();setInterval(tick,30);
+</script>
+</body>
+</html>

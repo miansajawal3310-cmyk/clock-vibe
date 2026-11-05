@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Free Online Countdown Timer with Alarm | ClockVibe</title>
+<meta name="description" content="Free online countdown timer with alarm sound. Set 1, 5, 10, 25 or 60 minutes, or any custom time. Works on phone and desktop. No ads, no sign-up.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://digialclockvibe.online/timer/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#140d2a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ClockVibe">
+<meta property="og:url" content="https://digialclockvibe.online/timer/">
+<meta property="og:title" content="Online Timer – Free Countdown Timer with Alarm | ClockVibe">
+<meta property="og:description" content="Free online countdown timer with alarm sound. Set 1, 5, 10, 25 or 60 minutes, or any custom time. Works on phone and desktop. No ads, no sign-up.">
+<meta property="og:image" content="https://digialclockvibe.online/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Online Timer – Free Countdown Timer with Alarm | ClockVibe">
+<meta name="twitter:description" content="Free online countdown timer with alarm sound. Set 1, 5, 10, 25 or 60 minutes, or any custom time. Works on phone and desktop. No ads, no sign-up.">
+<meta name="twitter:image" content="https://digialclockvibe.online/og-image.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Online Timer", "url": "https://digialclockvibe.online/timer/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web browser)", "description": "Free online countdown timer with alarm sound. Set 1, 5, 10, 25 or 60 minutes, or any custom time. Works on phone and desktop. No ads, no sign-up.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ClockVibe", "item": "https://digialclockvibe.online/"}, {"@type": "ListItem", "position": 2, "name": "Online Timer", "item": "https://digialclockvibe.online/timer/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I set a timer online?", "acceptedAnswer": {"@type": "Answer", "text": "Open this page, choose a preset such as 10 minutes or type your own minutes in the Custom box, then press Start. The timer counts down and beeps when it reaches zero."}}, {"@type": "Question", "name": "Does the online timer make a sound?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It plays three short beeps when the countdown ends. Keep the page open and your volume turned up so you can hear it."}}, {"@type": "Question", "name": "Can I use the timer for a 25 minute Pomodoro?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. 25 minutes is selected by default. When it ends, press Reset and choose 5 minutes for your short break."}}, {"@type": "Question", "name": "Is the timer free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is completely free, has no ads and does not need a sign-up."}}, {"@type": "Question", "name": "Does the timer work on my phone?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It works in any modern browser on phones, tablets and computers. Keep the screen on while the timer runs for the most reliable alarm."}}]}]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--fg:#fff;box-sizing:border-box}
+*{box-sizing:inherit;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px;scroll-snap-type:y proximity}
+body{background:#0b0b14;color:var(--fg);font-family:Sora,system-ui,sans-serif;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
+header{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 20px;background:rgba(10,10,20,.55);backdrop-filter:blur(16px);transition:opacity .5s}
+.hide header{opacity:0}
+.logo{font-weight:600;font-size:1.1rem}.logo i{font-style:normal;color:#ff8fb8}
+nav,.tools{display:flex;gap:6px;flex-wrap:wrap}
+a.n,button.chip{color:inherit;text-decoration:none;font:inherit;font-size:.82rem;background:rgba(255,255,255,.09);border:1px solid transparent;border-radius:999px;padding:7px 14px;cursor:pointer}
+a.n:hover,button.chip:hover{background:rgba(255,255,255,.16)}
+button.chip[aria-pressed=true]{border-color:#fff}
+:focus-visible{outline:2px solid #fff;outline-offset:3px}
+section{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 20px 60px;overflow:hidden;background:var(--bg);scroll-snap-align:start;scroll-margin-top:0}
+section::before,section::after{content:"";position:absolute;width:55vmax;height:55vmax;border-radius:50%;filter:blur(100px);opacity:.45;animation:drift 24s ease-in-out infinite alternate}
+section::before{background:var(--b1);top:-25vmax;left:-15vmax}
+section::after{background:var(--b2);bottom:-28vmax;right:-18vmax;animation-delay:-12s}
+@keyframes drift{to{transform:translate(10vmax,6vmax) scale(1.15)}}
+section>*{position:relative;z-index:1}
+#clock{--bg:#140d2a;--ac:#ff8fb8;--b1:#6c3df0;--b2:#ff5fa2}
+#world{--bg:#04202a;--ac:#5eead4;--b1:#0ea5a4;--b2:#2563eb}
+#timer{--bg:#1d0f0b;--ac:#ffb054;--b1:#e8590c;--b2:#c2255c}
+#stopwatch{--bg:#08190f;--ac:#4ade80;--b1:#16a34a;--b2:#0ea5e9}
+h2{font-weight:700;font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.01em;color:var(--ac);margin-bottom:30px;text-shadow:0 0 30px color-mix(in srgb,var(--ac) 45%,transparent)}
+.big{font-weight:700;font-size:clamp(4.2rem,20vw,16rem);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;background:linear-gradient(180deg,#fff 20%,var(--ac));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 40px color-mix(in srgb,var(--ac) 45%,transparent))}
+.big small{font-size:.3em;font-weight:600;letter-spacing:0;margin-left:.12em}
+.date{margin-top:1.4rem;font-size:clamp(1rem,2.4vw,1.6rem);font-weight:300}
+.zone{margin-top:.4rem;font-size:.85rem;opacity:.55}
+.bar{width:min(520px,80vw);height:4px;border-radius:4px;background:rgba(255,255,255,.12);margin-top:2rem;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ac);width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;width:min(1000px,100%)}
+.card{text-align:left;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:22px;backdrop-filter:blur(14px)}
+.card b{font-weight:400;opacity:.75;display:flex;justify-content:space-between}
+.card span{display:block;font-size:2.6rem;font-weight:200;margin:8px 0 2px;font-variant-numeric:tabular-nums}
+.card em{font-style:normal;font-size:.78rem;opacity:.55}
+.card .bar{width:100%;margin-top:14px;height:3px}
+.ring{position:relative;width:min(80vw,400px);aspect-ratio:1;margin-bottom:30px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.1),transparent 70%)}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg);filter:drop-shadow(0 0 18px color-mix(in srgb,var(--ac) 50%,transparent))}
+.ring circle{fill:none;stroke-width:11;stroke-linecap:round}
+.ring .k{stroke:rgba(255,255,255,.28);stroke-width:4;stroke-linecap:butt;stroke-dasharray:1.5 6.67}
+.ring .t{stroke:rgba(255,255,255,.12)}.ring .p{stroke:url(#tg)}
+.ring div{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(3rem,12vw,5rem);font-weight:700;letter-spacing:-.02em;color:#fff;text-shadow:0 0 30px color-mix(in srgb,var(--ac) 60%,transparent);font-variant-numeric:tabular-nums}
+.sw{font-size:clamp(3rem,13vw,8rem);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;background:linear-gradient(180deg,#fff,var(--ac));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 30px color-mix(in srgb,var(--ac) 55%,transparent));padding:10px 36px;margin-bottom:24px}
+.row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.go{background:linear-gradient(135deg,var(--ac),var(--b2));color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.35);border:0;border-radius:999px;padding:15px 48px;font:inherit;font-size:1.05rem;font-weight:700;cursor:pointer;box-shadow:0 10px 30px color-mix(in srgb,var(--b2) 55%,transparent);transition:transform .2s}
+.go:hover{transform:translateY(-2px) scale(1.03)}
+.row .chip{font-weight:600;padding:10px 20px}
+@media(prefers-reduced-motion:no-preference){.ring.on svg{animation:pulse 2s ease-in-out infinite}}
+@keyframes pulse{50%{transform:rotate(-90deg) scale(1.03)}}
+.row input{width:100px;background:rgba(255,255,255,.09);border:0;border-radius:999px;padding:8px 14px;color:inherit;font:inherit;text-align:center}
+ol{list-style:none;padding:0;margin-top:20px;max-height:170px;overflow:auto;width:min(340px,100%);font-variant-numeric:tabular-nums;font-weight:300}
+li{display:flex;justify-content:space-between;padding:8px 4px;border-bottom:1px solid rgba(255,255,255,.1)}
+.h1{font-size:clamp(1rem,2.4vw,1.4rem);font-weight:600;color:var(--ac);margin-bottom:1rem}
+.lead{max-width:640px;margin:-14px auto 28px;font-size:.95rem;line-height:1.7;font-weight:300;opacity:.8}
+#faq{--bg:#0e1126;--ac:#a5b4fc;--b1:#4f46e5;--b2:#0ea5e9;min-height:auto;padding-bottom:90px}
+.faqs{width:min(760px,100%);text-align:left}
+details{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px 22px;margin-bottom:12px;backdrop-filter:blur(14px)}
+summary{cursor:pointer;font-weight:600;font-size:1.05rem}
+details p{margin-top:12px;line-height:1.7;opacity:.8;font-weight:300}
+footer{padding:30px;text-align:center;font-size:.8rem;opacity:.5;background:#0b0b14}
+@media(max-width:600px){nav{display:none}}
+@media(prefers-reduced-motion:reduce){section::before,section::after{animation:none}html{scroll-behavior:auto}}
+
+body.pg section.tool{min-height:92vh}
+.pg #tool{--bg:var(--tbg)}
+.txt{background:#0b0b14;padding:70px 20px 40px}
+.txt article{max-width:760px;margin:0 auto;text-align:left;line-height:1.8;font-weight:300}
+.txt h2{font-size:clamp(1.4rem,3vw,2rem);margin:36px 0 12px;text-shadow:none;color:var(--tac)}
+.txt p{opacity:.85;margin-bottom:14px}
+.txt ul{margin:0 0 14px 22px;opacity:.85}
+.txt li{display:list-item;border:0;padding:3px 0}
+.txt a,footer a{color:#ff8fb8}
+.txt .faqs{margin-top:10px}
+.crumb{font-size:.8rem;opacity:.6;margin-bottom:14px}
+.crumb a{color:inherit}
+header .logo a{color:inherit;text-decoration:none}
+a.n[aria-current=page]{border-color:#fff}
+footer nav{display:flex;justify-content:center;gap:16px;margin-bottom:10px}
+footer nav a{font-size:.85rem}
+</style>
+</head>
+<body class="pg" style="--tac:#ffb054">
+<header><div class="logo"><a href="/">Clock<i>Vibe</i></a></div><nav style="display:flex"><a class="n" href="/">Online Clock</a><a class="n" href="/world-clock/">World Clock</a><a class="n" href="/timer/" aria-current="page">Timer</a><a class="n" href="/stopwatch/">Stopwatch</a></nav></header>
+<section id="tool" class="tool" style="--tbg:#1d0f0b;--ac:#ffb054;--b1:#e8590c;--b2:#c2255c">
+ <div class="crumb"><a href="/">ClockVibe</a> › Online Timer</div>
+ <h1 class="h1" style="font-size:clamp(1.5rem,4vw,2.6rem);margin-bottom:18px">Online Countdown Timer</h1>
+ <p class="lead" style="margin-top:0">Set a time, press Start and get an alarm when it ends. Free, fast and no sign-up.</p>
+ <div class="ring"><svg viewBox="0 0 200 200"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb054"/><stop offset="1" stop-color="#ff4d7d"/></linearGradient></defs><circle class="k" cx="100" cy="100" r="76"/><circle class="t" cx="100" cy="100" r="90"/><circle class="p" id="pr" cx="100" cy="100" r="90" stroke-dasharray="565.5" stroke-dashoffset="0"/></svg><div id="tt">25:00</div></div>
+ <div class="row" id="presets"><button class="chip" data-m="1">1 min</button><button class="chip" data-m="5">5 min</button><button class="chip" data-m="10">10 min</button><button class="chip" data-m="15">15 min</button><button class="chip" data-m="25" aria-pressed="true">25 min</button><button class="chip" data-m="30">30 min</button><button class="chip" data-m="45">45 min</button><button class="chip" data-m="60">60 min</button><input id="cm" type="number" min="1" max="999" placeholder="Custom" aria-label="Custom minutes"></div>
+ <div class="row"><button class="go" id="tgo">Start</button><button class="chip" id="trs">Reset</button></div>
+</section>
+<section class="txt"><article>
+<h2>A free online countdown timer that works in your browser</h2>
+<p>This online timer counts down from any time you choose and plays an alarm sound when it reaches zero. Pick one of the quick presets (1, 5, 10, 15, 25, 30, 45 or 60 minutes) or type your own number of minutes. The circle around the numbers empties as time passes, so you can see at a glance how much is left. There is nothing to install and no account to create.</p>
+<h2>What people use this timer for</h2>
+<ul><li><b>Studying and focus:</b> set 25 minutes for a Pomodoro session, then take a 5 minute break.</li><li><b>Cooking:</b> time pasta, rice, tea or baking without reaching for your phone.</li><li><b>Workouts:</b> time rest periods between sets or a plank hold.</li><li><b>Exams and presentations:</b> keep to the time limit for each question or slide.</li><li><b>Kids and classrooms:</b> run screen time, tidy-up time or a classroom activity.</li></ul>
+<h2>How to use the timer</h2>
+<p>Choose a preset or enter your minutes in the Custom box, then press Start. Press Pause to stop and Start again to continue. Reset sends the timer back to the time you picked. When the countdown ends you will hear three short beeps. The remaining time is also shown in the browser tab title, so you can keep an eye on it while you work in another tab.</p>
+<h2>Tips for the best results</h2>
+<p>Keep the tab open and turn your device volume up so the alarm can be heard. The timer uses your device clock, so it stays accurate even if the page is busy. For long sessions, leave the screen on or open the page on a spare phone or tablet.</p>
+<h2>Frequently asked questions</h2>
+<div class="faqs"><details><summary>How do I set a timer online?</summary><p>Open this page, choose a preset such as 10 minutes or type your own minutes in the Custom box, then press Start. The timer counts down and beeps when it reaches zero.</p></details><details><summary>Does the online timer make a sound?</summary><p>Yes. It plays three short beeps when the countdown ends. Keep the page open and your volume turned up so you can hear it.</p></details><details><summary>Can I use the timer for a 25 minute Pomodoro?</summary><p>Yes. 25 minutes is selected by default. When it ends, press Reset and choose 5 minutes for your short break.</p></details><details><summary>Is the timer free?</summary><p>Yes. It is completely free, has no ads and does not need a sign-up.</p></details><details><summary>Does the timer work on my phone?</summary><p>Yes. It works in any modern browser on phones, tablets and computers. Keep the screen on while the timer runs for the most reliable alarm.</p></details></div>
+<h2>More free tools</h2>
+<p><a href="/">Digital clock with seconds</a> · <a href="/stopwatch/">Online stopwatch</a> · <a href="/world-clock/">World clock</a></p>
+</article></section>
+<footer><nav><a href="/">Online Clock</a><a href="/world-clock/">World Clock</a><a href="/timer/">Countdown Timer</a><a href="/stopwatch/">Online Stopwatch</a></nav>ClockVibe · Free online clock, world clock, timer and stopwatch · No ads, no login</footer>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],pad=n=>String(n).padStart(2,'0');
+const C=565.5;let T={total:1500,left:1500,run:false,end:0};
+const setT=m=>{T={total:m*60,left:m*60,run:false,end:0};$('#tgo').textContent='Start'};
+$$('#presets [data-m]').forEach(b=>b.onclick=()=>{$$('#presets [data-m]').forEach(x=>x.removeAttribute('aria-pressed'));b.setAttribute('aria-pressed','true');$('#cm').value='';setT(+b.dataset.m)});
+$('#cm').oninput=e=>{const m=+e.target.value;if(m>0){$$('#presets [data-m]').forEach(x=>x.removeAttribute('aria-pressed'));setT(m)}};
+$('#tgo').onclick=()=>{if(T.left<=0)setT(T.total/60);T.run=!T.run;if(T.run)T.end=Date.now()+T.left*1000;$('#tgo').textContent=T.run?'Pause':'Start'};
+$('#trs').onclick=()=>setT(T.total/60);
+function beep(){try{const a=new AudioContext();[0,.35,.7].forEach(t=>{const o=a.createOscillator(),g=a.createGain();o.frequency.value=880;o.connect(g);g.connect(a.destination);g.gain.setValueAtTime(.2,a.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,a.currentTime+t+.3);o.start(a.currentTime+t);o.stop(a.currentTime+t+.3)})}catch(e){}}
+function tick(){
+ if(T.run){T.left=Math.max(0,(T.end-Date.now())/1000);if(!T.left){T.run=false;$('#tgo').textContent='Restart';beep()}}
+ const L=Math.ceil(T.left),s=pad(Math.floor(L/60))+':'+pad(L%60);$('#tt').textContent=s;
+ $('#pr').style.strokeDashoffset=C*(1-T.left/T.total);$('.ring').classList.toggle('on',T.run);
+ document.title=T.run?s+' – Online Timer | ClockVibe':'Online Timer – Free Countdown Timer with Alarm | ClockVibe';
+}
+tick();setInterval(tick,100);
+</script>
+</body>
+</html>
