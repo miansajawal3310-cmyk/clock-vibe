@@ -9,6 +9,7 @@
 <link rel="canonical" href="https://digialclockvibe.online/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:url" content="https://digialclockvibe.online/">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://digialclockvibe.online/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -25,6 +26,22 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "ClockVibe",
+      "url": "https://digialclockvibe.online/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://digialclockvibe.online/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "ClockVibe",
+      "url": "https://digialclockvibe.online/",
+      "logo": "https://digialclockvibe.online/favicon.svg"
+    },
     {
       "@type": "WebApplication",
       "name": "ClockVibe",
@@ -109,7 +126,9 @@
     }
   ]
 }
-</script><link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600&display=swap" rel="stylesheet">
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600&display=swap" rel="stylesheet">
 <style>
 :root{--fg:#fff;box-sizing:border-box}
 *{box-sizing:inherit;margin:0}
@@ -254,7 +273,6 @@ header .logo a{color:inherit;text-decoration:none}
 </details>
 </div>
 </section>
-<footer><nav style="display:flex;justify-content:center;gap:16px;margin-bottom:10px"><a href="/" style="color:#ff8fb8">Online Clock</a><a href="/world-clock/" style="color:#ff8fb8">World Clock</a><a href="/timer/" style="color:#ff8fb8">Countdown Timer</a><a href="/stopwatch/" style="color:#ff8fb8">Online Stopwatch</a></nav>ClockVibe · Free online clock, world clock, timer and stopwatch · No ads, no login</footer>
 
 <script>
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],pad=n=>String(n).padStart(2,'0');
@@ -313,70 +331,26 @@ function tick(){
 ui();tick();setInterval(tick,50);
 </script>
 
-<section class="seo-content" style="max-width:1100px;margin:50px auto;padding:30px 20px;color:#fff;line-height:1.8;">
+<section id="seo-extra" style="background:#0b0b14;padding:50px 20px">
+<div style="max-width:900px;margin:0 auto;color:#fff;line-height:1.8;font-family:Sora,system-ui,sans-serif;font-weight:300">
 
-  <h2>Online Digital Clock with Seconds</h2>
-  <p>
-    Looking for a free online digital clock? ClockVibe makes it easy to check the current time directly from your browser. Our digital clock displays hours, minutes, and seconds in real time, helping you keep track of time while working, studying, or managing daily activities.
-  </p>
+  <h2 style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;color:#ff8fb8;margin-bottom:12px">Digital Clock with Seconds – Full Screen</h2>
+  <p>Use ClockVibe as a free online digital clock with seconds. It updates in real time and works in any browser. Switch to full screen mode for a larger display on your desk, classroom or office screen.</p>
 
-  <h2>Free Digital Clock with Seconds</h2>
-  <p>
-Use our free online digital clock to check the current time with a clear and easy-to-read display. This digital clock with seconds updates automatically every second and works directly in your browser. Whether you need an online clock for everyday use or a full screen digital clock for your desk, ClockVibe makes it easy without requiring any software installation.
-  <h2>Full Screen Digital Clock</h2>
-  <p>
-    Want a larger clock display? Use full screen mode to show the digital clock across your entire screen. It is useful for classrooms, offices, presentations, study sessions, and everyday work.
-  </p>
+  <h2 style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;color:#ff8fb8;margin:28px 0 12px">12-Hour and 24-Hour Time</h2>
+  <p>Choose between 12-hour (AM/PM) and 24-hour clock formats. Press the 24h button in the top bar to switch instantly.</p>
 
-  <h2>12-Hour and 24-Hour Clock</h2>
-  <p>
-    Choose between the 12-hour and 24-hour clock formats according to your preference. The 12-hour format displays AM and PM, while the 24-hour format displays time from 00:00 to 23:59.
-  </p>
+  <h2 style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;color:#ff8fb8;margin:28px 0 12px">Check Time in Different Countries</h2>
+  <p>The <a href="/world-clock/" style="color:#5eead4">world clock</a> shows live local time in Karachi, Dubai, London, New York, Tokyo and 20 more cities. Compare time zones without any calculation.</p>
 
-  <h2>World Clock for Different Time Zones</h2>
-  <p>
-    Check the current time in different cities around the world. ClockVibe helps you compare time zones in cities such as London, New York, Dubai, Tokyo, and other major destinations.
-  </p>
+  <h2 style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;color:#ff8fb8;margin:28px 0 12px">Countdown Timer with Alarm</h2>
+  <p>Use the <a href="/timer/" style="color:#ffb054">online countdown timer</a> to set any duration from 1 to 999 minutes. An alarm beeps when time is up — useful for studying, cooking and workouts.</p>
 
-  <h2>Free Online Countdown Timer</h2>
-  <p>
-    Manage your daily activities with an easy-to-use online countdown timer. Set a custom duration or choose a preset countdown for studying, working, exercising, and taking breaks.
-  </p>
+  <h2 style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;color:#ff8fb8;margin:28px 0 12px">Stopwatch with Lap Times</h2>
+  <p>The <a href="/stopwatch/" style="color:#4ade80">online stopwatch</a> measures time to one hundredth of a second. Record lap splits during runs, gym sets or any timed activity.</p>
 
-  <h2>Online Stopwatch</h2>
-  <p>
-    Measure elapsed time with the free online stopwatch. Start, pause, and reset the stopwatch whenever needed. You can also record lap times to track individual intervals during workouts and other activities.
-  </p>
-
-  <h2>Why Choose ClockVibe?</h2>
-  <ul>
-    <li>Free online digital clock with seconds.</li>
-    <li>Full screen clock display.</li>
-    <li>12-hour and 24-hour time formats.</li>
-    <li>World clock for multiple cities.</li>
-    <li>Free online countdown timer.</li>
-    <li>Stopwatch with lap time tracking.</li>
-    <li>No software installation required.</li>
-    <li>Works on desktop, laptop, and mobile browsers.</li>
-  </ul>
-
-  <h2>Frequently Asked Questions</h2>
-
-  <h3>Is ClockVibe free to use?</h3>
-  <p>Yes, ClockVibe is free to use. You can access its clock, timer, world clock, and stopwatch features directly through your browser.</p>
-
-  <h3>Does the digital clock show seconds?</h3>
-  <p>Yes, the digital clock displays hours, minutes, and seconds in real time.</p>
-
-  <h3>Can I use the digital clock in full screen?</h3>
-  <p>Yes, you can activate full screen mode to display a larger clock across your screen.</p>
-
-  <h3>Can I check time in different countries?</h3>
-  <p>Yes, the World Clock feature lets you compare the current time in multiple cities and time zones.</p>
-
-  <h3>Do I need to download an application?</h3>
-  <p>No, ClockVibe works directly in your web browser without requiring an application download.</p>
-
+</div>
 </section>
+<footer><nav style="display:flex;justify-content:center;gap:16px;margin-bottom:10px"><a href="/" style="color:#ff8fb8">Online Clock</a><a href="/world-clock/" style="color:#ff8fb8">World Clock</a><a href="/timer/" style="color:#ff8fb8">Countdown Timer</a><a href="/stopwatch/" style="color:#ff8fb8">Online Stopwatch</a></nav>ClockVibe · Free online clock, world clock, timer and stopwatch · No ads, no login</footer>
 </body>
 </html>

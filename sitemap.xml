@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://digialclockvibe.online/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,21 +14,33 @@
   </url>
   <url>
     <loc>https://digialclockvibe.online/world-clock/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digialclockvibe.online/og-image.png</image:loc>
+      <image:title>World Clock – Current Time in 24 Cities Worldwide | ClockVibe</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://digialclockvibe.online/timer/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digialclockvibe.online/og-image.png</image:loc>
+      <image:title>Online Timer – Free Countdown Timer with Alarm | ClockVibe</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://digialclockvibe.online/stopwatch/</loc>
     <lastmod>2026-11-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digialclockvibe.online/og-image.png</image:loc>
+      <image:title>Online Stopwatch with Lap Times – Free | ClockVibe</image:title>
+    </image:image>
   </url>
 
 </urlset>
