@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://digialclockvibe.online/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,8 +14,8 @@
   </url>
   <url>
     <loc>https://digialclockvibe.online/world-clock/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://digialclockvibe.online/og-image.png</image:loc>
@@ -24,8 +24,8 @@
   </url>
   <url>
     <loc>https://digialclockvibe.online/timer/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://digialclockvibe.online/og-image.png</image:loc>
@@ -34,8 +34,8 @@
   </url>
   <url>
     <loc>https://digialclockvibe.online/stopwatch/</loc>
-    <lastmod>2026-11-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://digialclockvibe.online/og-image.png</image:loc>
